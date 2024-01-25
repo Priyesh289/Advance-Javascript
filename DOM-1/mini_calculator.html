@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        #sm{
+            color:red;
+            background-color: black;
+           
+
+        }
+        div{
+            padding: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text"  placeholder="Enter 1st number" id="input1">
+    <input type="text"  placeholder="Enter 2nd number" id="input2">
+    <div>
+    <button id="sm" onclick="sum()">Add</button>
+   <button onclick="subtract()">Subtract</button>
+   <button id="sm" onclick="multiply()">Multiply</button>
+   <button onclick="divide()">Divide</button>
+   </div>
+</body>
+</html>
+<script>
+    let a=document.getElementById("input1")
+    let b=document.getElementById("input2")
+    
+    function sum() {
+       let x=Number(a.value)+Number(b.value)
+        console.log(x)
+        alert(x)
+    }
+    function subtract(){
+        let x=(Number(a.value)-Number(b.value))
+        console.log(x)
+        alert(x)
+    }
+    function multiply(){
+        //let a=document.getElementById("input1").value
+        //let b=document.getElementById("input2").value
+        //let x=(Number(a)*Number(b))
+        let x=(Number(a.value)*Number(b.value))
+        console.log(x)
+        alert(x)
+}
+    function divide(){
+        let x=(Number(a.value)/Number(b.value))
+        console.log(x)
+        alert(x)
+}
+</script>

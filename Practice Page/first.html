@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="fill"></h3>
+   <input type="text" id="inp1" placeholder="Name">
+   <input type="email" id="inp2" placeholder="Email">
+   <input type="text" id="inp3" placeholder="mobile No">
+   <select id="select">
+    <option value="">Select Gender</option>
+    <option value=""> Male</option>
+    <option value="">Female</option>
+   </select>
+   <button onclick="btn()">Submit</button>
+</body>
+</html>
+<script>
+    let inp1=document.getElementById("inp1");
+    let inp2=document.getElementById("inp2");
+    let inp3=document.getElementById("inp3");
+    let fill=document.getElementById("fill")
+    let select=document.getElementById("select");
+    
+    function btn(){
+       fill.innerText="all required information are fill.";
+       console.log(inp1.value,inp2.value,inp3.value,select.valueS)  
+    }
+    
+</script>

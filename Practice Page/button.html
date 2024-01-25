@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Btn function</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="name" placeholder="Enter name">
+        <input type="text" name="" id="email"placeholder="Enter Email">
+        <input type="password" name="" id="pass" placeholder="Password">
+        <input type="Submit" value="Submit">
+    </form>
+</body>
+</html>
+<script>
+    let myForm=document.querySelector("form");
+    let name=document.getElementById("name");
+    let email=document.getElementById("email")
+    let pass=document.querySelector("#pass")
+    let allData=[]
+
+    myForm.addEventListener("submit",function(e){
+        e.preventDefault();
+        let obj={};
+        obj.name=name.value
+        obj.email=email.value
+        obj.pass=pass.value
+        allData.push(obj)
+        console.log(allData)
+    })
+</script>

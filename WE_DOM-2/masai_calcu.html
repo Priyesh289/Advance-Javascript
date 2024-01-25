@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="h2"></h2>
+    <div id="first">
+        <button>0</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9 </button>
+    </div>
+    <div id="operator">
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+    </div>
+    <button id="equal">=</button>
+</body>
+</html>
+<script>
+    let display=document.querySelector("#h2");
+    let name=document.querySelectorAll("#first > button");
+    let operator=document.querySelectorAll("#operator > button");
+    let equal=document.getElementById("equal");
+
+    let A=""
+    let isA=true;
+    let B="";
+    let operatorB="";
+
+//first number click
+    for(let i=0;i<name.length;i++){
+        name[i].addEventListener("click",function(){
+            if(isA==true){
+                A+=name[i].innerText
+                display.innerText=A
+            }
+ //second number click after  operator           
+            else{
+                B+=name[i].innerText
+                display.innerText=B
+
+            }
+        })
+    }
+
+//operator click    
+    for(let j=0;j<operator.length;j++){
+        operator[j].addEventListener("click",function(){
+            isA=false;
+            operatorB=operator[j].innerText
+        })
+    }
+
+//click operator, perform function
+function calculate(A,B,operator){
+    switch(operatorB){
+        case "+":
+            return Number(A)+Number(B);
+        case "-":
+            return Number(A)-Number(B);
+        case "*":
+            return Number(A)*Number(B)
+        case "/":
+            return Number(A)/Number(B)        
+    }
+}
+
+//clcik equal button or take result
+equal.addEventListener("click",function(){
+    display.innerText=calculate(A,B,operator)
+})
+</script>
