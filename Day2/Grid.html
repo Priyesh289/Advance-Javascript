@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+      #main{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(10,1fr);
+        gap:10px;
+        
+        font-family: sans-serif;
+      }
+      #main>div{
+        
+        height: 35px;
+        width: 135px;
+        border-radius: 25px;
+        padding-left: 25px;
+      }
+      h1{
+        text-align:center;
+        font-family: cursive;
+        font-size: 60px;
+        margin-top: 0px;
+      }
+      .last{
+        width:95%;
+        height:35px;
+        margin: auto;
+        margin-top:15px;
+        border:1px solid black;
+        border-radius: 25px;
+        background-color: rgb(176, 222, 240);
+      }
+      h2{
+        margin: 5px 5px;
+      }
+      .one{
+        background-color: rgb(176, 222, 240);
+      }
+      .two{
+        background-color: rgb(245, 163, 190);
+      }
+      .three{
+        background-color: rgb(226, 179, 90);
+      }
+      h3{
+        margin: 7px 20px;
+        font-size: 20px;
+      }
+      
+    </style>
+</head>
+<body>
+  <h1>Weekly schedule</h1>
+  <div id="main">
+    <div style="background-color: white;"></div>
+  <div class="two"><h3>Monday</h3></div>
+  <div class="three"><h3>Tuesday</h3></div>
+  <div class="two"><h3>Wednesday</h3></div>
+  <div class="three"><h3>Thursday</h3></div>
+  <div class="two"><h3>Friday</h3></div>
+  <div class="one"><h3>8:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>9:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>10:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>11:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>12:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>13:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>14:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>15:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="one"><h3>16:00</h3></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="two"></div>
+  </div>
+  <div class="last">
+    <h2>Note:</h2>
+  </div>
+</body>
+</html>
