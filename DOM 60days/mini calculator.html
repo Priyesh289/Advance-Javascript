@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini calculator</title>
+    <style>
+#first{
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 150px 550px;
+    background-color: rgb(116, 116, 65);
+}
+#second{
+    margin: 45px 25px;
+}
+#third{
+    margin: 5px 17px;
+}
+
+h3{
+    margin: 15px 90px;
+}
+    </style>
+</head>
+<body>
+    <div id="first">
+    <div id="second">
+        <input id="inp1" type="number" placeholder="1st input">
+        <br><br>
+    <input id="inp2" type="number" placeholder="2nd input">
+    </div>
+    <br>
+   <div id="third">
+    <button style="background-color: rgb(214, 163, 87);" onclick="Add()">Add</button>
+    <button style="background-color: rgb(214, 163, 87);" onclick="Sub()">Sub</button>
+    <button style="background-color: rgb(214, 163, 87);" onclick="Multiply()">Multiply</button>
+    <button style="background-color: rgb(214, 163, 87);" onclick="Divide()">Divide</button>
+   </div>
+    </div>
+</body>
+</html>
+<script>
+    let inp1=document.getElementById("inp1");
+    let inp2=document.getElementById("inp2");
+
+   
+
+    function Add(){
+        let total=Number(inp1.value)+Number(inp2.value)
+        alert(total)
+    }
+    
+    function Sub(){
+        let tot=Number(inp1.value)-Number(inp2.value)
+        alert(tot)
+    }
+    function Multiply(){
+        let Multiply=Number(inp1.value)*Number(inp2.value)
+        alert(Multiply)
+    }
+    function Divide(){
+        let div=Number(inp1.value)/Number(inp2.value)
+        alert(div)
+    }
+</script>
