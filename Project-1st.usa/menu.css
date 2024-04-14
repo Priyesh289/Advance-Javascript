@@ -1,0 +1,175 @@
+*{
+    
+    font-family: sans-serif;
+    margin: 0px;
+}
+#nav{
+    position: fixed;
+    top: 0;
+    width: 100%;;
+   
+}
+#nav>a>img{
+    width:50px;
+    mix-blend-mode: multiply;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+    height: 100px;
+    
+}
+header>.nav{
+    width: 40%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     margin: 0px 70px; 
+}
+header>.nav>a{
+    color: black;
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 14px;
+}
+.profile{
+    display: flex;
+    justify-content: end;
+    width: 28%;
+    align-items: center;
+    margin: 0px 100px;
+}
+.profile>a>button{
+    width: 140px;
+    height: 45px;
+    background-color: #E4002B;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0px 10px;
+    border: #E4002B;
+}
+
+#location{
+    width: 100%;
+    height: 50px;
+    background-color: #202124;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#location>a{
+    color:white;
+    text-decoration: none;   
+}
+
+
+
+/*Main*/
+
+#main{
+    margin-top: 200px;
+    width: 100%;
+}
+.mainInside{
+    width: 80%;
+    margin: auto;
+    
+}
+.mainInside>h2{
+    font-size: 35px;
+    padding-top: 15px ;
+    color: #202124;
+}
+.gridBox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap:35px 20px;
+    
+    margin-top:25px ;
+}
+.gridBox>div{
+    
+    width: auto;
+}
+.img{
+    width: 230px;
+}
+button{
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+button>div>h2{
+    font-weight: bold;
+    margin: 20px 0px;
+    color: #202124;
+}
+
+
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: #202124;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.fotDiv1{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px ;
+    margin-bottom: 50px;
+}
+.fotDiv1>div{
+    margin-bottom: 10px;
+}
+.ftable{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.ftable>div>h1{
+    color: #FFFFFF;
+    font-family: cursive;
+}
+.ftable>div>h4{
+    padding:8px 0px;
+}
+.ftable>div>a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.ftable>div>a>p{
+    margin: 3px 0px;
+}
+.fLower{
+    border:2px solid red;
+}
+.fLast{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    gap:50px;
+    padding-bottom: 40px;
+}
+.fImg{
+    width: 90px;
+}
+.fLogo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fLogo>div{
+    margin: 0px 5px;
+}
