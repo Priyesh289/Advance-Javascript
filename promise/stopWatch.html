@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+</head>
+<style>
+    .container{
+        
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        border:1px solid red;
+        background-color: aqua;
+        width:300px;
+        height: 300px;
+    }
+    .container>button{
+        margin: 5px;
+    }
+    #stopWatch{
+        font-size: 35px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="stopWatch">00:00:00</div>
+        <br>
+        <button onclick="start()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+</body>
+</html>
+
+<script>
+
+    let displayShow = document.getElementById("stopWatch")
+    let intervalId;
+
+    let hour = 0;
+    let minute = 0;
+    let second = 0;
+
+function start(){
+
+    intervalId = setInterval(function(){
+
+        second++
+
+        if(second==60){
+
+            second=0;
+            minute++
+        }
+
+        displayShow.textContent = Number(hour)+ ":" + Number(minute) + ":" + Number(second)
+    },1000)
+}
+
+
+function pause(){
+
+    clearInterval(intervalId)
+}
+
+function reset(){
+
+    clearInterval(intervalId)
+    displayShow.textContent = "00:00:00"
+
+    hour = 0;
+    minute = 0;
+    second = 0;
+
+}
+       
+</script>
